@@ -45,6 +45,47 @@
 <div id="main">
 
   <article class="project-card">
+  <table class="project-table">
+    <tr>
+      <th>Project</th>
+      <td>
+        <a href="https://github.com/92-afzal/claims-data-pipeline" target="_blank">
+          Claims Data Pipeline & Warehouse (Healthcare Analytics)
+        </a>
+      </td>
+    </tr>
+
+    <tr>
+      <th>Tools Used</th>
+      <td>AWS S3, Snowflake, SQL, Snowflake Notebooks</td>
+    </tr>
+
+    <tr>
+      <th>Description</th>
+      <td>
+        Designed and implemented a production-style data engineering pipeline for
+        healthcare claims data. Built an end-to-end ELT workflow that ingests raw
+        multi-year inpatient, outpatient, and beneficiary data from S3 into Snowflake,
+        standardizes it using layered schemas (RAW, STG, DWH), and models it into a
+        star schema for analytics. Implemented derived denials using payment logic,
+        handled complex healthcare codes (DRG, ICD-9, HCPCS), and ensured idempotent
+        processing with MERGE-based loads and data quality checks.
+      </td>
+    </tr>
+
+    <tr>
+      <th></th>
+      <td>
+        <a href="https://github.com/92-afzal/claims-data-pipeline" target="_blank">
+          <img src="images/architecture.png" alt="Claims Data Pipeline Architecture" />
+        </a>
+      </td>
+    </tr>
+  </table>
+</article>
+
+
+  <article class="project-card">
     <table class="project-table">
       <tr>
         <th>Project</th>
@@ -200,4 +241,5 @@
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
   </body>
+
 </html>
