@@ -49,6 +49,48 @@
     <tr>
       <th>Project</th>
       <td>
+        <a href="https://github.com/92-afzal/HL7_Analytic_Engineering" target="_blank">
+          Scalable HL7 Healthcare Data Platform (Snowflake + dbt)
+        </a>
+      </td>
+    </tr>
+
+    <tr>
+      <th>Tools Used</th>
+      <td>
+        Snowflake, dbt, AWS S3, Snowflake Streams, Snowflake Tasks, SQL, Synthea FHIR JSON
+      </td>
+    </tr>
+
+    <tr>
+      <th>Description</th>
+      <td>
+        Designed and implemented a production-style healthcare analytics platform using a
+        Medallion architecture (Bronze → Silver → Gold). Raw FHIR JSON data is ingested from
+        AWS S3 into Snowflake using Streams and Tasks, transformed incrementally with dbt,
+        and modeled into a star schema with surrogate keys. Implemented SCD Type 2
+        snapshots for patient history tracking, SLA monitoring for pipeline latency,
+        clustering for performance optimization, and analytics-ready KPI models including
+        admission rates and observation volume.
+      </td>
+    </tr>
+
+    <tr>
+      <th></th>
+      <td>
+        <a href="https://github.com/92-afzal/HL7_Analytic_Engineering" target="_blank">
+          <img src="images/hl7_de_architecture.png" alt="HL7 Healthcare Data Platform Architecture" />
+        </a>
+      </td>
+    </tr>
+  </table>
+</article>
+
+  <article class="project-card">
+  <table class="project-table">
+    <tr>
+      <th>Project</th>
+      <td>
         <a href="https://github.com/92-afzal/claim_denail_data_engineering_proj" target="_blank">
           Claims Data Pipeline & Warehouse (Healthcare Analytics)
         </a>
@@ -243,4 +285,5 @@
   </body>
 
 </html>
+
 
