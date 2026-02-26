@@ -49,6 +49,49 @@
     <tr>
       <th>Project</th>
       <td>
+        <a href="https://github.com/92-afzal/FHIR_R4_HL7_PIPEELINE" target="_blank">
+          FHIR R4 Data Lake → Snowflake Analytics Warehouse Pipeline
+        </a>
+      </td>
+    </tr>
+
+    <tr>
+      <th>Tools Used</th>
+      <td>
+        Snowflake, Python, AWS S3, FHIR R4, SQL, YAML, GitHub Actions, Synthea FHIR JSON
+      </td>
+    </tr>
+
+    <tr>
+      <th>Description</th>
+      <td>
+        Built an end-to-end healthcare data engineering pipeline that ingests raw FHIR R4
+        JSON bundles from Amazon S3 into Snowflake using external stages and storage
+        integrations. Implemented a structured RAW → STG → DWH architecture with JSON
+        normalization, UUID reference resolution, and star schema modeling. Designed
+        a fact_observation table joined to SCD Type 2 patient and date dimensions,
+        implemented incremental MERGE logic, enforced referential integrity validation,
+        and built an A/B SQL regression testing framework to safely refactor
+        transformations. The pipeline is environment-driven, idempotent, and CI-ready.
+      </td>
+    </tr>
+
+    <tr>
+      <th></th>
+      <td>
+        <a href="https://github.com/92-afzal/FHIR_R4_HL7_PIPEELINE" target="_blank">
+          <img src="images/fhir_pipeline_architecure.png" alt="FHIR R4 Snowflake Analytics Architecture" />
+        </a>
+      </td>
+    </tr>
+  </table>
+</article>
+
+  <article class="project-card">
+  <table class="project-table">
+    <tr>
+      <th>Project</th>
+      <td>
         <a href="https://github.com/92-afzal/HL7_Analytic_Engineering" target="_blank">
           Scalable HL7 Healthcare Data Platform (Snowflake + dbt)
         </a>
@@ -285,5 +328,6 @@
   </body>
 
 </html>
+
 
 
